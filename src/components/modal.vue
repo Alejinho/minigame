@@ -13,7 +13,9 @@ export default {
   props: ['theme', 'close'],
   methods: {
     closer() {
-      this.close()
+      if(this.close) {
+        this.close()
+      }
     }
   }
 }
@@ -46,7 +48,6 @@ background-color: rgba(0, 0, 0, 0.8);
     z-index: 2;
     &.alert {
       top: 40%;
-      height: 20%;
     }
   }
 }

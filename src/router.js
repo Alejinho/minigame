@@ -25,6 +25,11 @@ export default new Router({
       path: '/question/:id/:q',
       name: 'question',
       component: () => import(/* webpackChunkName: "about" */ './views/Question.vue')
+    },
+    {
+      path: '/finish/:score',
+      name: 'finish',
+      component: () => import(/* webpackChunkName: "about" */ './views/Finish.vue')
     }
   ]
 })
