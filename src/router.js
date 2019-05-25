@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import SignUp from './views/SignUp.vue'
+import Ranking from './views/Ranking.vue'
+import Question from './views/Question.vue'
+import Finish from './views/Finish.vue'
+
+
 
 Vue.use(Router)
 
@@ -14,22 +20,22 @@ export default new Router({
     {
       path: '/sign-up',
       name: 'signup',
-      component: () => import(/* webpackChunkName: "about" */ './views/SignUp.vue')
+      component: SignUp
     },
     {
       path: '/ranking',
       name: 'ranking',
-      component: () => import(/* webpackChunkName: "about" */ './views/Ranking.vue')
+      component: Ranking
     },
     {
       path: '/question/:id/:q',
       name: 'question',
-      component: () => import(/* webpackChunkName: "about" */ './views/Question.vue')
+      component:Question
     },
     {
       path: '/finish/:score',
       name: 'finish',
-      component: () => import(/* webpackChunkName: "about" */ './views/Finish.vue')
+      component: Finish
     }
   ]
 })
