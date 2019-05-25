@@ -16,11 +16,15 @@
                 <p class="title">{{response.content.title}}</p>
                 <p>{{response.content.message}}</p>
                 <div class="actions">
-                    <router-link class="link" v-if="!response.has_reached_the_end"
+                    <router-link class="link" v-if="!response.was_correct"
+                    to="/ranking">
+                    Continuar
+                    </router-link>
+                    <router-link class="link" v-if="!response.has_reached_the_end && response.was_correct"
                     :to="`/question/${$route.params.id}/${parseInt($route.params.q) + 1}`">
                     Continuar
                     </router-link>
-                    <router-link class="link" v-if="response.has_reached_the_end"
+                    <router-link class="link" v-if="response.has_reached_the_end && response.was_correct"
                     :to="`/finish/${question.score}`">
                     Continuar
                     </router-link>
