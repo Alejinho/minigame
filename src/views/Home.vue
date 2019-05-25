@@ -16,7 +16,7 @@
         <router-link class="link" to="/ranking">RANKING</router-link>
       </div>
       <div class="home-terms">
-        <a href="#">POLÍTICAS DE PRIVACIDAD, TÉRMINOS Y CONDICIONES.</a>
+        <router-link to="/terms">POLÍTICAS DE PRIVACIDAD, TÉRMINOS Y CONDICIONES.</router-link>
       </div>
     </div>
   </div>
@@ -43,6 +43,7 @@ export default {
   &-init {
     margin: 20px 0;
     a {
+      font-family: sans-serif;
       width: 220px;
       display: inline-block;
       text-align: center;
@@ -50,7 +51,7 @@ export default {
       text-decoration: none;
       color: black;
       border-bottom: solid 8px #a70d19;
-      margin-right: 20px; 
+      margin-right: 20px;
     }
   }
 }
@@ -84,10 +85,14 @@ export default {
   h1, h2 {
     margin: 0;
     text-align: left;
+    color: black;
   }
   h1 {
-    font-family: 'MINISerif-Black';
+    font-family: 'MINISerif-Bold';
     font-size: 4rem;
+  }
+  h2 {
+    font-family: 'MINISerif-Regular';
   }
 }
 </style>

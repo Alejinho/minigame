@@ -44,7 +44,7 @@ export default {
                 }).then((res) => {
                     let user = JSON.stringify(res.data);
                     window.localStorage.setItem('user', res.data);
-                    
+
                     axios.post(`${this.api}games`, {
                         customer_id: res.data.id
                     }).then((game) => {
@@ -98,9 +98,16 @@ export default {
 
     .form {
         margin: 20px 0;
+        label {
+            font-family: 'MINISerif-Regular';
+        }
+        input {
+            font-family: 'MINISerif-Regular';
+        }
     }
 
     .title {
+        font-family: 'MINISerif-Bold';
         font-size: 4rem;
         border-bottom: solid 8px #a70d19;
         padding: 20px;
@@ -113,7 +120,8 @@ export default {
     }
 
     .header {
-        font-size: 3rem
+        font-size: 3rem;
+        font-family: 'MINISerif-Bold';
     }
 
     .link {
@@ -128,6 +136,10 @@ export default {
     .img-logo {
         width: 150px;
         margin-top: 50px;
+    }
+
+    .subtitle {
+        font-family: 'MINISerif-Regular';
     }
 
 </style>

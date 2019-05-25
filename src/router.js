@@ -5,8 +5,7 @@ import SignUp from './views/SignUp.vue'
 import Ranking from './views/Ranking.vue'
 import Question from './views/Question.vue'
 import Finish from './views/Finish.vue'
-
-
+import Terms from './views/Terms.vue'
 
 Vue.use(Router)
 
@@ -36,6 +35,11 @@ export default new Router({
       path: '/finish/:score',
       name: 'finish',
       component: Finish
+    },
+    {
+      path: '/terms',
+      name: 'terms',
+      component: Terms,
     }
   ]
 })

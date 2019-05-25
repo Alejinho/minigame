@@ -1,11 +1,11 @@
 <template>
-  <div class="ranking">
+  <div class="ranking" style="font-family: serif;">
     <router-link to="/" class="back-button">&#60; VOLVER AL INICIO</router-link>
     <div class="title">
-      <h1>Ranking</h1>
+      <h1 style="color: #000;font-family: sans-serif; font-weight: bold">Ranking</h1>
     </div>
     <div class="finder">
-      BUSCAR POR no DE CÉDULA
+      BUSCAR POR No. DE CÉDULA
       <input type="text" v-model="query" @change="finder">
     </div>
     <div class="table">
@@ -62,12 +62,10 @@ export default {
   },
   methods: {
     finder() {
-      if (this.query.length > 0) {
-        axios.get(`${this.api}games?wildcard=${this.query}`)
-        .then((res) => {
-          this.ranking = res.data;
-        })
-      }
+      axios.get(`${this.api}games?wildcard=${this.query}`)
+      .then((res) => {
+        this.ranking = res.data;
+      })
     }
   }
 }
@@ -94,6 +92,7 @@ export default {
   }
   .finder {
     text-align: center;
+    color: #000;
     input {
       background-color: #F2F2F2;
       border: none;
@@ -103,6 +102,7 @@ export default {
   .table {
     width: 100%;
     margin-top: 50px;
+    color: #000;
     table {
       width: 100%;
       border-collapse: collapse;

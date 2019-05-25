@@ -8,20 +8,41 @@
 @import './assets/normalize.scss';
 
 @font-face {
+  font-family: 'MINISansSerif-Regular';
+  src: url('./assets/fonts/MINISansSerif-Regular.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MINISansSerif-Bold';
+  src: url('./assets/fonts/MINISansSerif-Bold.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'MINISerif-Regular';
-  src: url('./assets/fonts/MINISerif-Regular.eot?#iefix') format('embedded-opentype'),  
-  url('./assets/fonts/MINISerif-Regular.woff') format('woff'), 
-  url('./assets/fonts/MINISerif-Regular.ttf')  format('truetype'), 
+  src: url('./assets/fonts/MINISerif-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/MINISerif-Regular.woff') format('woff'),
+  url('./assets/fonts/MINISerif-Regular.ttf')  format('truetype'),
   url('./assets/fonts/MINISerif-Regular.svg#MINISerif-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
+  font-family: 'MINISerif-Bold';
+  src: url('./assets/fonts/MINISerif-Bold.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'MINISerif-Black';
-  src: url('./assets/fonts/MINISerif-Black.eot?#iefix') format('embedded-opentype'),  
-  url('./assets/fonts/MINISerif-Black.woff') format('woff'), 
-  url('./assets/fonts/MINISerif-Black.ttf')  format('truetype'), 
+  src: url('./assets/fonts/MINISerif-Black.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/MINISerif-Black.woff') format('woff'),
+  url('./assets/fonts/MINISerif-Black.ttf')  format('truetype'),
   url('./assets/fonts/MINISerif-Black.svg#MINISerif-Black') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -29,9 +50,9 @@
 
 @font-face {
   font-family: 'MINISerif-Italic';
-  src: url('./assets/fonts/MINISerif-Italic.eot?#iefix') format('embedded-opentype'),  
-  url('./assets/fonts/MINISerif-Italic.woff') format('woff'), 
-  url('./assets/fonts/MINISerif-Italic.ttf')  format('truetype'), 
+  src: url('./assets/fonts/MINISerif-Italic.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/MINISerif-Italic.woff') format('woff'),
+  url('./assets/fonts/MINISerif-Italic.ttf')  format('truetype'),
   url('./assets/fonts/MINISerif-Italic.svg#MINISerif-Italic') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -56,6 +77,12 @@ html {
       text-decoration: none;
       color: black;
       border-bottom: solid 8px #a70d19;
-      margin-right: 20px; 
+      margin-right: 20px;
     }
+
+  button {
+    background: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+  }
 </style>

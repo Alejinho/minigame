@@ -42,8 +42,8 @@ background-color: rgba(0, 0, 0, 0.8);
   &-dialog {
     position: fixed;
     top: 30%;
-    left: 30%;
-    width: 40%;
+    left: 27%;
+    width: 46%;
     background-color: white;
     z-index: 2;
     &.alert {
